@@ -1,0 +1,25 @@
+<!-- JSON.stringify = Data upload korar somoy use kora jay,
+JSON.parse = data stringify akare save hole otake parse kora jay eivabe. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+    <script>
+        const user = {id:245, name:"Masud"};
+        // {"id":245, "name":"Masud"}; = after converting to JSON stringify;
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+        const userFromJSON = JSON.parse(userJSON);
+        // {id:245, name:"Masud"}; = after converting JSON.stringify to JSON. parse;
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>
